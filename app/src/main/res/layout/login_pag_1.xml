@@ -7,6 +7,8 @@
     android:background="#2D81F7"
     tools:context=".MainActivity">
 
+
+
     <LinearLayout
         android:id="@+id/title"
         android:layout_width="wrap_content"
