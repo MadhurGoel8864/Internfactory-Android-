@@ -113,7 +113,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
-        android:onClick="signActivity"
+        android:onClick="signUpActivity"
         android:text="don't have an account create account"
         android:textAlignment="center"
         android:textColor="@color/white"
