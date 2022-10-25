@@ -14,7 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InternFactory"
         tools:targetApi="31">
-        <activity android:name=".Home_page" android:label="Home"/>
+        <activity
+            android:name=".verification_page"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Home_page"
+            android:label="Home" />
         <activity
             android:name=".Forgot_password_page"
             android:exported="false">
