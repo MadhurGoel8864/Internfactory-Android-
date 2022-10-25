@@ -19,9 +19,10 @@ class sign_in_page : Activity() {
             val Intent = Intent(this,sign_up_page::class.java)
             startActivity(Intent)
         }
+
         val forgot_pass_activity = findViewById<Button>(R.id.forgot_pass_btn)
         forgot_pass_activity.setOnClickListener {
-            val Intent = Intent(this,Forgot_password_page::class.java)
+            val Intent = Intent(    this,Forgot_password_page::class.java)
             startActivity(Intent)
         }
     }
