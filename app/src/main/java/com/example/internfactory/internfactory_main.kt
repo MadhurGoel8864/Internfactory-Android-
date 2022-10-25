@@ -10,6 +10,7 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash_screen)
 
+
         Handler().postDelayed({
                               val Intent = Intent(this@MainActivity,Home_page::class.java)
             startActivity(Intent)
