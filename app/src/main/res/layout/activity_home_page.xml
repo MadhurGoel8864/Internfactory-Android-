@@ -101,6 +101,7 @@
             android:id="@+id/sign_up_btn"
             android:padding="0dp"
             android:textStyle="bold"
+            style="?android:attr/borderlessButtonStyle"
             android:text="Sign Up"
             android:textAllCaps="false"
             android:background="#2D81F7"

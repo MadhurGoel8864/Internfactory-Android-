@@ -147,6 +147,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/login_btn"
             android:padding="0dp"
+            style="?android:attr/borderlessButtonStyle"
+
             android:textStyle="bold"
             android:text="Login"
             android:textAllCaps="false"
