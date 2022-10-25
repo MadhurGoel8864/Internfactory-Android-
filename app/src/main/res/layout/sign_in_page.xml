@@ -11,6 +11,7 @@
         android:id="@+id/imageView"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:onClick="image_view"
         android:src="@drawable/logo_interfactory"
         android:layout_marginTop="66dp"
         app:layout_constraintEnd_toEndOf="parent"
