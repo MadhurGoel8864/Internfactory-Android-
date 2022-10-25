@@ -126,6 +126,8 @@ android:textColor="@color/white"
         android:layout_marginEnd="16dp"
         android:background="#2D81F7"
         android:padding="0dp"
+        style="?android:attr/borderlessButtonStyle"
+
         android:text="Forgot Password?"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="@+id/login_btn"
@@ -162,6 +164,8 @@ android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:id="@+id/sign_up_btn"
             android:text="Create one"
+            style="?android:attr/borderlessButtonStyle"
+
             android:background="#2D81F7"
             android:padding="0dp"
             />
