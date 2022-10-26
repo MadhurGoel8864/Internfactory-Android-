@@ -154,7 +154,7 @@
             android:id="@+id/login_btn"
             android:padding="0dp"
             style="?android:attr/borderlessButtonStyle"
-
+            android:onClick="logInFrag"
             android:textStyle="bold"
             android:text="Login"
             android:textAllCaps="false"

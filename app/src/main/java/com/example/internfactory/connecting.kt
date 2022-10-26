@@ -8,10 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 
-class connecting : Activity() {
+class connecting : AppCompatActivity() {
 
     private fun replaceFrag(fragment : Fragment){
-        val fm : FragmentManager = supportFragmentManager
+        val fm : FragmentManager =supportFragmentManager
         val ft : FragmentTransaction = fm.beginTransaction()
         ft.replace(R.id.container, fragment)
         ft.commit()
@@ -43,8 +43,12 @@ class connecting : Activity() {
 
         val fm : FragmentManager = supportFragmentManager
         val ft : FragmentTransaction = fm.beginTransaction()
-        val logInFragment = LogInFragment()
+        val logInFragment = SignIn_Fragment()
         ft.add(R.id.container, logInFragment)
         ft.commit()
+
+        val actionBar = supportActionBar
+        actionBar?.setDisplayShowHomeEnabled(false)
+        actionBar?.setDisplayShowTitleEnabled(false)
     }
 }
