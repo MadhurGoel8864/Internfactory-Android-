@@ -11,19 +11,17 @@ import android.widget.EditText
 import androidx.core.widget.addTextChangedListener
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-//and (password_inp.text?.isNotEmpty() == true)
 class sign_in_page : Activity() {
 
     private lateinit var password_text : TextInputEditText
-    private lateinit var ed1 : EditText
+    private lateinit var ed1 : TextInputEditText
     private lateinit var login_btn : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.sign_in_page)
-        ed1 = findViewById(R.id.ed1)
+        ed1 = findViewById(R.id.email_inp)
         login_btn  =findViewById(R.id.login_btn)
         password_text = findViewById(R.id.password_input)
-
         ed1.addTextChangedListener(object:TextWatcher{
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }

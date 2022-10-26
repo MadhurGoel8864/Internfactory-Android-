@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="#2D81F7"
     tools:context=".sign_in_page">
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="80dp"
@@ -56,27 +55,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <EditText
-        android:id="@+id/ed1"
+<!--    <EditText-->
+<!--        android:id="@+id/ed1"-->
+<!--        android:layout_width="330dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:textCursorDrawable="@drawable/custom_cursor"-->
+
+<!--        android:ems="10"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        android:background="@drawable/custom_sing_in"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:hint="Email ID"-->
+<!--        android:textColorHint="#E2E2E2"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView4" />-->
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="330dp"
-        android:layout_height="60dp"
-        android:paddingRight="20dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:background="@drawable/custom_sing_in"
-        android:paddingLeft="15dp"
+        android:id="@+id/ed1"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginTop="20dp"
+        app:startIconDrawable="@drawable/ic_baseline_email"
         android:hint="Email ID"
-        android:textColorHint="#E2E2E2"
-        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_inp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_sing_in"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@drawable/custom_cursor"
 
+            android:textColor="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="330dp"
         android:id="@+id/password_inp"
         app:hintTextColor="@color/white"
         android:textColorHint="@color/white"
+
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
         android:hint="Password"
@@ -84,17 +109,18 @@
         app:boxStrokeWidthFocused="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_lock"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/ed1">
 <com.google.android.material.textfield.TextInputEditText
     android:layout_width="match_parent"
     android:id="@+id/password_input"
+    android:textCursorDrawable="@drawable/custom_cursor"
     android:layout_height="match_parent"
     android:background="@drawable/custom_sing_in"
     android:inputType="textPassword"
 android:textColor="@color/white"
-
     />
     </com.google.android.material.textfield.TextInputLayout>
 <!--    <EditText-->

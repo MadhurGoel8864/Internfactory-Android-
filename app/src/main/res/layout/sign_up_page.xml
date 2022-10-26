@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
+        app:startIconDrawable="@drawable/ic_baseline_person"
         android:layout_marginTop="25dp"
         android:hint="First Name"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,6 +48,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/first_name_inp"
             android:layout_width="match_parent"
+            android:textCursorDrawable="@drawable/custom_cursor"
             android:background="@drawable/custom_sing_in"
             android:layout_height="match_parent"
             android:inputType="text"
@@ -59,6 +61,7 @@
         android:textColorHint="@color/white"
         android:layout_height="wrap_content"
         app:boxStrokeWidth="0dp"
+        app:startIconDrawable="@drawable/ic_baseline_person"
         app:boxStrokeWidthFocused="0dp"
         android:layout_marginTop="20dp"
         android:hint="Last Name"
@@ -68,6 +71,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/last_name_inp"
             android:layout_width="match_parent"
+            android:textCursorDrawable="@drawable/custom_cursor"
             android:layout_height="match_parent"
             android:background="@drawable/custom_sing_in"
             android:inputType="text"
@@ -83,6 +87,7 @@
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
         android:layout_marginTop="20dp"
+        app:startIconDrawable="@drawable/ic_baseline_email"
         android:hint="Email ID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,6 +98,8 @@
             android:layout_height="match_parent"
             android:background="@drawable/custom_sing_in"
             android:inputType="textEmailAddress"
+            android:textCursorDrawable="@drawable/custom_cursor"
+
             android:textColor="@color/white"
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -106,6 +113,7 @@
         app:boxStrokeWidthFocused="0dp"
         android:layout_marginTop="20dp"
         android:hint="Password"
+        app:startIconDrawable="@drawable/ic_baseline_lock"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:passwordToggleEnabled="true"
@@ -115,6 +123,7 @@
             android:id="@+id/password_form_inp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:textCursorDrawable="@drawable/custom_cursor"
             android:background="@drawable/custom_sing_in"
             android:inputType="textPassword"
             android:textColor="@color/white"

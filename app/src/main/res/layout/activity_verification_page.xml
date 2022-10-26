@@ -4,38 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#818080"
+    android:background="#999FA8"
     tools:context=".verification_page">
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView3"-->
-<!--        android:layout_width="275dp"-->
-<!--        android:layout_height="255dp"-->
-<!--        android:layout_marginTop="85dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:srcCompat="@drawable/image" />-->
 
     <ImageView
         android:id="@+id/veri_logo"
         android:src="@drawable/forgot_password_logo"
-        android:layout_width="275dp"
-        android:layout_height="255dp"
-        android:layout_marginTop="65dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
-
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Verification"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="40sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/veri_logo" />-->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:letterSpacing="0.1"
         android:text="Verification"
-        android:layout_marginTop="65dp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
+
+        android:textColor="@color/white"
         android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/veri_logo" />
@@ -45,12 +49,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter 6 digit OTP send to your Email Id"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="7dp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
     <EditText
         android:id="@+id/editTextNumberPassword"
         android:layout_width="330dp"
@@ -65,27 +68,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:text="Continue"
         android:background="@drawable/custom_login_btn"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword" />
-
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:paddingRight="46dp"
         android:text="Resend OTP"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumberPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword" />
 
 <!--    <TextView-->
