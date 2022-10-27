@@ -4,10 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#E5E5E5"
+    android:background="#e2ebf8"
     tools:context=".SignIn_Fragment">
-
-    <!-- TODO: Update blank fragment layout -->
 
     <ImageView
         android:id="@+id/imageView"
@@ -32,21 +30,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-<!--    <EditText-->
-<!--        android:id="@+id/ed1"-->
-<!--        android:layout_width="330dp"-->
-<!--        android:layout_height="60dp"-->
-<!--        android:paddingRight="20dp"-->
-<!--        android:inputType="textEmailAddress"-->
-<!--        android:background="@drawable/custom_sing_in"-->
-<!--        android:paddingLeft="15dp"-->
-<!--        android:hint="Email ID"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textColorHint="#212427"-->
-<!--        android:layout_marginTop="25dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/textView4" />-->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="330dp"
         android:id="@+id/ed1"
@@ -112,12 +95,12 @@
         android:textColor="#212427"
         app:layout_constraintEnd_toEndOf="@+id/login_btn"
         app:layout_constraintTop_toBottomOf="@+id/password_inp" />
-
-    3<Button
+    <Button
         android:id="@+id/login_btn"
         android:layout_width="330dp"
         android:layout_height="50dp"
         android:text="LOGIN"
+        android:enabled="false"
         android:background="@drawable/custom_login_btn"
         android:layout_marginTop="70dp"
         app:layout_constraintEnd_toEndOf="parent"

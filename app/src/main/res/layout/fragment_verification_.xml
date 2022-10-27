@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#E5E5E5"
+    android:background="#e2ebf8"
     tools:context=".Verification_Fragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -70,7 +70,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/otp_input" />
-
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
@@ -79,9 +78,8 @@
         android:onClick="otpVerificationFrag"
         android:text="Resend OTP"
         android:textColor="#212427"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumberPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword" />
-
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
     <LinearLayout
         android:id="@+id/title"
         android:layout_width="wrap_content"
