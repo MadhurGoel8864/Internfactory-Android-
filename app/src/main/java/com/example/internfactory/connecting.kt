@@ -18,7 +18,6 @@ class connecting : AppCompatActivity() {
         val fm : FragmentManager =supportFragmentManager
         val ft : FragmentTransaction = fm.beginTransaction()
         ft.replace(R.id.container, fragment)
-        ft.addToBackStack("fragment - ${count++}")
         ft.commit()
     }
 
@@ -51,12 +50,6 @@ class connecting : AppCompatActivity() {
         val logInFragment = SignIn_Fragment()
         ft.add(R.id.container, logInFragment)
         ft.commit()
-
-        fm.addOnBackStackChangedListener {
-            for (i in 0 until fm.backStackEntryCount){
-                Log.d("fragment",fm.getBackStackEntryAt(i).name.toString())
-            }
-        }
 
         val actionBar = supportActionBar
         actionBar?.setDisplayShowHomeEnabled(false)

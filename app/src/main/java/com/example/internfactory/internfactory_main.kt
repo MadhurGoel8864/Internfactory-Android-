@@ -12,7 +12,7 @@ class MainActivity : Activity() {
 
 
         Handler().postDelayed({
-                              val Intent = Intent(this@MainActivity,Home_page::class.java)
+            val Intent = Intent(this@MainActivity,Home_page::class.java)
             startActivity(Intent)
             finish()
         },3000)
