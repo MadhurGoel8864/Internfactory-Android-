@@ -6,6 +6,6 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 
 interface RetrofitApi {
-    @POST("/api/auth/login")
+    @POST("/api")
     fun sendUserData(@Body userSend: User) : Call<User>
 }
