@@ -130,6 +130,7 @@
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:text="Sign Up"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:enabled="false"
         android:backgroundTint="@color/color"
