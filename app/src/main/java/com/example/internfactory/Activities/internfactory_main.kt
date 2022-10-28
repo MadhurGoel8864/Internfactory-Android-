@@ -24,7 +24,7 @@ class MainActivity : Activity() {
             finish()
         },3000)
 
-        val user = User( null,"naman@gmail.com",null, null,  "123",null)
+        val user = User( "User","Five","fgltzul@gmail.com", "user")
 //
 //    val call = retrofitAPI.sendUserData(user)
 
@@ -35,16 +35,12 @@ class MainActivity : Activity() {
         val x = call.enqueue(object: Callback<User> {
             override fun onResponse(call: Call<User>, response: Response<User>) {
                 if (response.body() != null) {
-                    Toast.makeText(applicationContext, response.body()?.email, Toast.LENGTH_LONG)
-                        .show()
                     Log.i("Naman", response.body().toString())
                 } else {
-                    Toast.makeText(applicationContext, "Failed", Toast.LENGTH_LONG).show()
                     Log.i("Naman", "Fail")
                 }
             }
             override fun onFailure(call: Call<User>, t: Throwable) {
-                Toast.makeText(applicationContext, "Fail", Toast.LENGTH_LONG).show()
                 Log.i("Naman", "Fail")
             }
         })

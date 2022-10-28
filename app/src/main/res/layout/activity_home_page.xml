@@ -75,7 +75,7 @@
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginTop="50dp"
-    android:backgroundTint="@color/color"
+        android:backgroundTint="@color/color"
         android:onClick="connect"
         android:text="Get Started"
         android:textStyle="bold"
