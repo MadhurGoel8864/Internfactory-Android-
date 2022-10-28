@@ -35,22 +35,28 @@
         android:id="@+id/ed1"
         app:hintTextColor="#212427"
         android:textColorHint="#212427"
-        android:layout_height="60dp"
+        app:helperText="Required"
+        app:helperTextTextColor="#FB2A2A"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="25dp"
         android:hint="Email"
         app:startIconTint="#212427"
         app:boxStrokeWidth="0dp"
         app:startIconDrawable="@drawable/ic_baseline_email_24"
         app:boxStrokeWidthFocused="0dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4">
-
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/email_inp"
+        android:lines="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:inputType="textEmailAddress"
+        android:maxLength="50"
         android:background="@drawable/custom_sing_in"
         android:textColor="#212427"
         />
@@ -61,7 +67,9 @@
         android:id="@+id/password_inp"
         app:hintTextColor="#212427"
         android:textColorHint="#212427"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
+        app:helperText="Required"
+        app:helperTextTextColor="#FB2A2A"
         android:layout_marginTop="25dp"
         android:hint="Password"
         app:boxStrokeWidth="0dp"
@@ -70,6 +78,8 @@
         app:boxStrokeWidthFocused="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:counterEnabled="true"
+        app:counterMaxLength="16"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="#212427"
         app:layout_constraintTop_toBottomOf="@+id/ed1">
@@ -79,6 +89,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/custom_sing_in"
             android:inputType="textPassword"
+            android:maxLength="16"
             android:textColor="#212427"
 
             />
