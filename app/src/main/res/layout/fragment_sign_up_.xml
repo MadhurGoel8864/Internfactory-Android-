@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#e2ebf8"
-    tools:context=".SignUp_Fragment">
+    tools:context=".Activities.SignUp_Fragment">
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="178dp"
@@ -38,6 +38,7 @@
         app:startIconDrawable="@drawable/ic_baseline_person_24"
         android:layout_marginTop="15dp"
         android:hint="First Name"
+        app:startIconTint="#212427"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4">
@@ -62,7 +63,7 @@
         android:hint="Last Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:startIconDrawable="@drawable/ic_baseline_person_24"
-
+        app:startIconTint="#212427"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/first_name">
         <com.google.android.material.textfield.TextInputEditText
@@ -86,7 +87,7 @@
         android:hint="Email Id"
         app:layout_constraintEnd_toEndOf="parent"
         app:startIconDrawable="@drawable/ic_baseline_email_24"
-
+        app:startIconTint="#212427"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/last_name">
         <com.google.android.material.textfield.TextInputEditText
@@ -113,6 +114,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="#212427"
+        app:startIconTint="#212427"
         app:layout_constraintTop_toBottomOf="@+id/email_box">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password_form_inp"
@@ -129,8 +131,8 @@
         android:layout_height="50dp"
         android:text="Sign Up"
         android:textStyle="bold"
-        android:background="@drawable/custom_login_btn"
         android:enabled="false"
+        android:background="@drawable/custom_login_btn"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

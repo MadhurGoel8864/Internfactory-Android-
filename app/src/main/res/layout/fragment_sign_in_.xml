@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#e2ebf8"
-    tools:context=".SignIn_Fragment">
+    tools:context=".Activities.SignIn_Fragment">
 
     <ImageView
         android:id="@+id/imageView"
@@ -38,6 +38,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="25dp"
         android:hint="Email"
+        app:startIconTint="#212427"
         app:boxStrokeWidth="0dp"
         app:startIconDrawable="@drawable/ic_baseline_email_24"
         app:boxStrokeWidthFocused="0dp"
@@ -65,6 +66,7 @@
         android:hint="Password"
         app:boxStrokeWidth="0dp"
         app:startIconDrawable="@drawable/lock"
+        app:startIconTint="#212427"
         app:boxStrokeWidthFocused="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

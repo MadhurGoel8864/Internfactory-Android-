@@ -5,8 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
-import android.widget.Button
 import android.widget.Toast
+import com.example.internfactory.Activities.Home_page
 import com.example.internfactory.modules.User
 import com.example.internfactory.server.RetrofitApi
 import com.example.internfactory.server.ServiceBuilder
@@ -19,7 +19,7 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash_screen)
         Handler().postDelayed({
-                              val Intent = Intent(this@MainActivity,Home_page::class.java)
+                              val Intent = Intent(this@MainActivity, Home_page::class.java)
             startActivity(Intent)
             finish()
         },3000)
