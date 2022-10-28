@@ -1,4 +1,4 @@
-package com.example.internfactory
+package com.example.internfactory.Activities
 
 import android.os.Bundle
 import android.text.Editable
@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import com.example.internfactory.R
 import com.google.android.material.textfield.TextInputEditText
 
 class SignUp_Fragment : Fragment() {
